@@ -1,15 +1,18 @@
-# Dataset guidance
+# Dataset source and use
 
-The original project used `D3_student_placement_prediction_dataset_2026 (1).csv`, a 100,000-row CSV containing a `student_id` field, demographic and education-related variables, skill scores, placement status, and the `salary_package_lpa` target.
+## Source
 
-This repository deliberately does **not** include that CSV. Before adding any data to GitHub, confirm all of the following:
+- **Dataset:** [Student Placement Prediction Dataset 2026](https://www.kaggle.com/datasets/sehaj1104/student-placement-prediction-dataset-2026)
+- **Publisher:** Mansehaj Preet on Kaggle
+- **Licence:** CC0 Public Domain
+- **Format:** CSV, 100,000 rows and 26 columns
 
-1. You created the data or have explicit permission and a compatible licence to publish it.
-2. The data is synthetic, or all direct and indirect identifiers have been removed.
-3. The records cannot reasonably be re-identified when combined with public information.
-4. Publishing the salary target and other attributes is permitted by your institution or data owner.
-5. You document the data source, collection period, population, preprocessing, and known limitations.
+According to the Kaggle data card, this is a **synthetic** dataset created for educational, research, and machine-learning work. It simulates student academic, technical, and placement attributes; it does not contain real student records.
 
-For private research, store the raw CSV outside the repository or under `data/raw/`; both locations are ignored by `.gitignore`. To run the original notebooks without changing their paths, place an authorised copy in the repository root with its original filename.
+## Included file
 
-Do not commit real student records, contact details, API keys, or credentials.
+`D3_student_placement_prediction_dataset_2026 (1).csv` is retained in the repository root so that the original notebooks run without path changes. The target for this project is `salary_package_lpa`, expressed in Lakhs Per Annum (LPA).
+
+## Responsible use
+
+Although this source is public and synthetic, model outputs remain estimates and must not be treated as salary guarantees. Do not add real student records, contact details, API keys, or credentials to this repository.

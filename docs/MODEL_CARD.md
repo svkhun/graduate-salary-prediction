@@ -14,7 +14,7 @@ The application accepts aptitude, coding, communication, and logical-reasoning s
 
 ## Data status
 
-The source CSV is excluded from the public-ready repository pending confirmation of its provenance, licence, anonymisation, and publication permission. The `student_id` column requires particular review even if the data is thought to be synthetic.
+The source CSV is included for reproducibility. It is the [Student Placement Prediction Dataset 2026](https://www.kaggle.com/datasets/sehaj1104/student-placement-prediction-dataset-2026), which Kaggle describes as a 100,000-row synthetic dataset and lists under CC0 Public Domain. The `student_id` field is therefore treated as a synthetic identifier, not personal data.
 
 ## Evaluation status
 

@@ -12,8 +12,7 @@ __pycache__/
 !.env.example
 .streamlit/secrets.toml
 
-# Data that requires a licence/privacy review before publication
-D3_student_placement_prediction_dataset_2026 (1).csv
+# Other local data that requires a licence/privacy review before publication
 data/raw/
 
 # Editor and operating-system files

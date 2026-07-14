@@ -57,17 +57,17 @@ Do not initialise the GitHub repository with a README, `.gitignore`, or licence 
 
 ## Train a new model
 
-The original CSV is intentionally excluded from this public-ready repository. Only use a dataset that you are authorised to use and publish.
+The public synthetic dataset used by this project is included in the repository. It is published on Kaggle under the CC0 Public Domain licence; see [data/README.md](data/README.md) for attribution and scope.
 
 ```powershell
-python train_model.py --data "C:\path\to\your\authorised_dataset.csv" --output model.pkl
+python train_model.py --data "D3_student_placement_prediction_dataset_2026 (1).csv" --output model.pkl
 ```
 
 This command overwrites `model.pkl`, prints RMSE and R² on a fixed 80/20 train-test split, and keeps the app's required feature engineering consistent with training.
 
 ## Data and privacy
 
-The original project contained a 100,000-row CSV with a `student_id` field. It is not included here because its licence, origin, and anonymisation status need to be confirmed before a public release. See [data/README.md](data/README.md) before adding data to GitHub.
+The included 100,000-row dataset is a synthetic dataset created for educational, research, and machine-learning use. Kaggle lists it under the CC0 Public Domain licence. Its `student_id` field is a synthetic identifier, not a real student record. See [data/README.md](data/README.md) for the source and attribution.
 
 ## Research limitations
 
@@ -82,8 +82,8 @@ More detail is available in the [model card](docs/MODEL_CARD.md).
 - `03_model_training.ipynb` — model experiments
 - `04_final_research_workflow.ipynb` — final research workflow
 
-The original notebooks refer to the CSV filename `D3_student_placement_prediction_dataset_2026 (1).csv` in the repository root. Do not add that file to a public repository until the checks in `data/README.md` are complete.
+The original notebooks refer to `D3_student_placement_prediction_dataset_2026 (1).csv` in the repository root; that file is included for reproducibility.
 
 ## Licence
 
-No licence has been selected for this repository yet. Choose a licence only after confirming that the code, model, notebooks, and any dataset you publish can legally be distributed under it.
+The included dataset is CC0 Public Domain according to its Kaggle data card. No licence has been selected for this repository's original code, model, and notebooks yet; choose one before inviting others to reuse them.
