@@ -1,0 +1,23 @@
+# Python virtual environments and caches
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Secrets and local Streamlit settings
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Data that requires a licence/privacy review before publication
+D3_student_placement_prediction_dataset_2026 (1).csv
+data/raw/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
